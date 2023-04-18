@@ -44,6 +44,8 @@ inline namespace Functions {
     template <typename ...T> void re(T &...t) { (cin >> ... >> t); }
     void yes() { cout << "YES\n"; }
     void no() { cout << "NO\n"; }
+    ll divup(ll a, ll b) { return a/b + (a%b>0); }
+    ll divnear(ll a, ll b) { return a/b + ((2*a/b)&1); }
     ll pwr(ll a, ll x) { ll r = 1; while (x > 1) { if (x&1) r = r*a%MOD; a = a*a%MOD; x /= 2; } return a*r%MOD; }
     ll fact(ll x) { if (x == 0) return 1; return x*fact(x-1)%MOD; }
     ll comb(ll n, ll p) { auto mm = minmax(p, n-p); ll r = 1; iab(i, mm.S+1, n+1) r = r*i%MOD; return r/fact(mm.F); }
