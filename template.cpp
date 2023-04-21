@@ -55,9 +55,10 @@ inline namespace Functions {
 #define def(type, Args...) type Args; re(Args)
 
 
-#define USE_TESTCASES
 void solve(int ti) {}
 
+
+#define USE_TESTCASES
 int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr);
