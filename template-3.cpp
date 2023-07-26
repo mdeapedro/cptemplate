@@ -40,7 +40,7 @@ int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr);
     #ifdef USETC
-        def(int, ntc); iab(tci, 1, ntc+1) solve(tci);
+        inp(int, ntc); iab(tci, 1, ntc+1) solve(tci);
     #else
         solve(0);
     #endif
