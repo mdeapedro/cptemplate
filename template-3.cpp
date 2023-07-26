@@ -30,6 +30,8 @@ template <typename ...T> void pr(T ...t) { ((cout << t << ' '), ...); }
 template <typename ...T> void prn(T ...t) { pr(t...); cout << '\n'; }
 template <typename ...T> void re(T &...t) { (cin >> ... >> t); }
 #define inp(type, Args...) type Args; re(Args)
+ll cdiv(ll a, ll b) { return a/b + ((a^b)>0 && a%b); }
+ll fdiv(ll a, ll b) { return a/b - ((a^b)<0 && a%b); }
 
 
 // #define USETC
