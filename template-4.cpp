@@ -59,6 +59,8 @@ template <typename ...T> void pr(T ...t) { ((cout << t << ' '), ...); }
 template <typename ...T> void prn(T ...t) { pr(t...); cout << '\n'; }
 #define                       pvt(X) each(x, X) pr(x)
 #define                       pvtn(X) {each(x, X) pr(x); prn();}
+                         void no() { cout << "NO\n"; }
+                         void yes() { cout << "YES\n"; }
 //     HELPERS
                            ll cdiv(ll a, ll b) { return a/b + ((a^b)>0 && a%b); }
                            ll fdiv(ll a, ll b) { return a/b - ((a^b)<0 && a%b); }
