@@ -57,8 +57,8 @@ template <typename ...T> void re(T &...t) { (cin >> ... >> t); }
 //     PRINT
 template <typename ...T> void pr(T ...t) { ((cout << t << ' '), ...); }
 template <typename ...T> void prn(T ...t) { pr(t...); cout << '\n'; }
-#define                       pvt(X) each(x, X) pr(x)
-#define                       pvtn(X) {each(x, X) pr(x); prn();}
+#define                       pall(X) each(x, X) pr(x)
+#define                       paln(X) {each(x, X) pr(x); prn();}
                          void no() { cout << "NO\n"; }
                          void yes() { cout << "YES\n"; }
 //     HELPERS
