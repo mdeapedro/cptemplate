@@ -80,8 +80,8 @@ int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr);
 #ifndef ONLINE_JUDGE
-    freopen("input.txt", "r", stdin);
-    freopen("output.txt", "w", stdout);
+    (void)!freopen("input.txt", "r", stdin);
+    (void)!freopen("output.txt", "w", stdout);
     auto _clock = clock();
 #endif
 #ifdef USETC
